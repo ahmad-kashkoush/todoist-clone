@@ -1,0 +1,28 @@
+.sidebar {
+  background-color: green;
+  min-height: 100vh;
+}
+
+.sidebar .top-bar {
+  display: flex;
+  gap: 1rem;
+}
+.row {
+  width: 100%;
+  padding: 10px;
+  display: block;
+}
+.sidebar button.btn {
+  border: none;
+  text-align: left;
+}
+.sidebar button.add-task {
+  background-color: blue;
+}
+.sidebar button.search {
+  background-color: yellow;
+}
+.sidebar .sec {
+  padding: 0;
+  list-style: none;
+}
