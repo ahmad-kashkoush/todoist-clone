@@ -1,15 +1,12 @@
-export function Sidebar() {
+export function Sidebar({ onOpenAddTaskModal, onOpenSearchModal }) {
+
     return (
         <div className='sidebar'>
-            <div className='top-bar row'>
-                <span>Ahmed</span>
-                <span>notifcations</span>
-                <span>toggleWindowIcon</span>
-            </div>
-            <button className='btn add-task row'>
+            <TopBar />
+            <button onClick={onOpenAddTaskModal} className='btn add-task row'>
                 Add Tasks
             </button>
-            <button className='btn search row'>
+            <button onClick={onOpenSearchModal} className='btn search row'>
                 Search
                 {/* Todo Open Modal when Clicked */}
             </button>
@@ -28,4 +25,12 @@ export function Sidebar() {
             </ul>
         </div>
     );
+
+}
+function TopBar() {
+    return <div className='top-bar row'>
+        <span>Ahmed</span>
+        <span>nt</span>{/**Notification */}
+        <span>wnd</span>{/**toggle Windo */}
+    </div>;
 }

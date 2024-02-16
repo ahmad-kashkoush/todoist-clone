@@ -1,4 +1,38 @@
 .App {
   display: flex;
   background-color: red;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.btn {
+  border: none;
+}
+ul {
+  list-style: none;
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  translate: -50% 0%;
+  background-color: black;
+  width: 70%;
+  height: fit-content;
+  padding: 20px;
+}
+.modal input {
+  padding: 10px;
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+}
+.modal button {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.modal-close {
+  display: none;
 }
